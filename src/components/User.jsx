@@ -3,6 +3,7 @@ import { Card, Col, Button,Modal } from 'react-bootstrap'
 import EdithUserForm from './EdithUserForm';
 
 const User = (props) => {
+    
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -32,7 +33,7 @@ const User = (props) => {
             </Modal>
             <Col md='3' style={{ marginBottom: '1rem' }}>
                 <Card border="primary" style={{ width: '18rem' }}>
-                    <Card.Header>Staff Comment Id: {props.staffInfo.id} </Card.Header>
+                    <Card.Header>Unit: {props.staffInfo.type} </Card.Header>
                     <Card.Body>
                         <Card.Title>Name: {props.staffInfo.name} </Card.Title>
                         <Card.Title>Contact: {props.staffInfo.contact} </Card.Title>

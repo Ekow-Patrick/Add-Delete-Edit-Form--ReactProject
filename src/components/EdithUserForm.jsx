@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import {Form,Button } from 'react-bootstrap';
 
+
 class EdithUserForm extends Component {
     constructor(props) {
         super(props);
@@ -57,7 +58,7 @@ class EdithUserForm extends Component {
                     </Form.Group>
                     <br />
                         <Button variant="primary" type="submit" >
-                            Submit
+                            Update
                         </Button>
 
                 </Form>
